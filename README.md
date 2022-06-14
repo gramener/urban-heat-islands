@@ -9,33 +9,24 @@ Use the environment.yml file to install required packages.
 ```bash
 conda env create -f environment.yml
 ```
+
 ## Steps involved in the project
-There are total 6 notebooks involved which takes into consideration 
+
+There are total 6 notebooks involved which takes into consideration
 Data preprocessing, Indices calculation, Spatial Merging, zonal statistics and Spatial regression model
 
 
-    1.Step0_Calculation_Satellite_Indices.ipynb 
-        Notebook Which Performs the landsat8 data preprocessing and Indices calculation for AOI.
-
-    2. step1_add-time-to-grids.ipynb
-        Working with the satellite data time component to convert it into grid geojson.
-
-    3. step2_add-attrs-to-grids.ipynb
-        adding the attribute information to the grids made in step one
-
-    4. step3_merge-attrs-time.ipynb
-        This step helps to merge the attributes and calculated indices information with the yearly timestamps   
-
-    5. step4_entropy_bbc.ipynb
-        Calculation of Shannon's entropy and building block coverage for each grid at a specific year.
-
-    6. step5_spatial-regression-statsmodels.ipynb
-        Calculation of Shannon's entropy and building block coverage for each grid at a specific year.
-
+1. [Calculate satellite variables](step0_Calculation_satellite_variables.ipynb) pre-processing Landsat 8 data.
+2. [Convert to time-based grids](step1_add-time-to-grids.ipynb)
+3. [Add non-satellite variables to grids](step2_add-attrs-to-grids.ipynb)
+4. [Merge satellite and non-satellite variables](step3_merge-attrs-time.ipynb)
+5. [Calculate derived variables](step4_entropy_bbc.ipynb): Shannon's entropy and building block coverage
+6. [Create spatial regression model](step5_spatial-regression-statsmodels.ipynb)
 
 ## Quick Information Guide
 
 ### Satellite Imagery Data - Landsat 8
+
 With the presence of changing atmospheric conditions, there are images that get hampered
 due to the presence of the cloud cover. We must filter out those images on the basis of the
 scene cloud cover.
@@ -46,7 +37,7 @@ below image shows one of such scenarios.
 The images selected for the modeling purpose through visual inspection and the metadata
 information for the image using [USGS Earth Explorer](https://earthexplorer.usgs.gov/)
 
-### Zonal Statistics and Aggregation:
+### Zonal Statistics and Aggregation
 
 Zonal statistics calculates or performs the statistics with the values of the value raster. Then
 get the statistics values for each zone based on the zone raster. A zone is defined as all the
@@ -67,6 +58,7 @@ The zonal statistics for each year is calculated for each year from 2013 to 2020
 summer months (From May to September every year.)
 
 ### Spatial Regression
+
 Spatial regression methods allow us to account for dependence between
 observations, which often arises when observations are collected from points
 or regions located in space.
@@ -75,4 +67,3 @@ Regression (and prediction more generally) provides us a perfect case to examine
 spatial structure can help us understand and analyze our data. Usually, spatial structure
 helps models in one of two ways. The first (and most clear) way space can have an impact
 on our data is when the process generating the data is itself explicitly spatial
-
