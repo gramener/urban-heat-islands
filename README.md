@@ -1,8 +1,18 @@
 # Urban_Heat_Islands_demo
 
-This repository is the Urban Heat Island Project demo, made for the purpose of PyCon Submissions as well as Geopython Submissions for the year 2022
+This repository is the Urban Heat Island Project demo, made for the purpose of PyCon Submissions as well as Geopython Submissions for the year 2022.
+
+## Setup the environment
+
+Use the environment.yml file to install required packages.
+
+```bash
+conda env create -f environment.yml
+```
+## Steps involved in the project
+
 '''
-1.Step0_Calculation_Satellite_Indices.ipynb 
+    1.Step0_Calculation_Satellite_Indices.ipynb 
        Notebook Which Performs the landsat8 data preprocessing and Indices calculation for AOI.
 
     2. step1_add-time-to-grids.ipynb
