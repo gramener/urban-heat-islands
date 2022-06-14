@@ -65,3 +65,14 @@ and maximum values.
 
 The zonal statistics for each year is calculated for each year from 2013 to 2020 for the
 summer months (From May to September every year.)
+
+### Spatial Regression
+Spatial regression methods allow us to account for dependence between
+observations, which often arises when observations are collected from points
+or regions located in space.
+
+Regression (and prediction more generally) provides us a perfect case to examine how
+spatial structure can help us understand and analyze our data. Usually, spatial structure
+helps models in one of two ways. The first (and most clear) way space can have an impact
+on our data is when the process generating the data is itself explicitly spatial
+
