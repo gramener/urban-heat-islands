@@ -1,7 +1,7 @@
 # Urban_Heat_Islands_demo
 
 This repository is the Urban Heat Island Project demo, made for the purpose of PyCon Submissions as well as Geopython Submissions for the year 2022
-
+'''
 1.Step0_Calculation_Satellite_Indices.ipynb 
        Notebook Which Performs the landsat8 data preprocessing and Indices calculation for AOI.
 
@@ -14,8 +14,9 @@ This repository is the Urban Heat Island Project demo, made for the purpose of P
     4. step3_merge-attrs-time.ipynb
         This step helps to merge the attributes and calculated indices information with the yearly timestamps   
 
- 5. step4_entropy_bbc.ipynb
+    5. step4_entropy_bbc.ipynb
         Calculation of Shannon's entropy and building block coverage for each grid at a specific year.
 
-6. step5_spatial-regression-statsmodels.ipynb
+    6. step5_spatial-regression-statsmodels.ipynb
         Calculation of Shannon's entropy and building block coverage for each grid at a specific year.
+'''
