@@ -12,8 +12,9 @@ conda env create -f environment.yml
 ## Steps involved in the project
 
 '''
+
     1.Step0_Calculation_Satellite_Indices.ipynb 
-       Notebook Which Performs the landsat8 data preprocessing and Indices calculation for AOI.
+        Notebook Which Performs the landsat8 data preprocessing and Indices calculation for AOI.
 
     2. step1_add-time-to-grids.ipynb
         Working with the satellite data time component to convert it into grid geojson.
