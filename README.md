@@ -9,7 +9,9 @@ Use the environment.yml file to install required packages.
 ```bash
 conda env create -f environment.yml
 ```
-
+## Data Samples
+https://archive.org/details/@sumedhghatage?tab=uploads&and[]=mediatype%3A%22software%22
+Make sure you arrange the data in the given folder structure
 ## Steps involved in the project
 
 There are total 6 notebooks involved which takes into consideration
